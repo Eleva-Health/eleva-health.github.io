@@ -1,0 +1,574 @@
+/* Legal and Contact Pages Styling */
+
+/* Legal Page Layout */
+.legal-page {
+    padding: 8rem 0 4rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.legal-container {
+    max-width: 1000px;
+    position: relative;
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.legal-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Legal Content Layout */
+.legal-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Table of Contents */
+.table-of-contents {
+    grid-column: 1;
+    align-self: start;
+    width: 250px;
+    max-height: calc(100vh - 240px);
+    overflow-y: auto;
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.table-of-contents h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-purple);
+}
+
+.table-of-contents ul {
+    list-style: none;
+}
+
+.table-of-contents li {
+    margin-bottom: 0.75rem;
+}
+
+.table-of-contents a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.table-of-contents a:hover {
+    color: var(--primary-purple);
+}
+
+/* Custom Scrollbar for TOC */
+.table-of-contents::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-of-contents::-webkit-scrollbar-track {
+    background: rgba(30, 15, 50, 0.4);
+    border-radius: 3px;
+}
+
+.table-of-contents::-webkit-scrollbar-thumb {
+    background: rgba(168, 85, 247, 0.5);
+    border-radius: 3px;
+}
+
+.table-of-contents::-webkit-scrollbar-thumb:hover {
+    background: rgba(168, 85, 247, 0.7);
+}
+
+/* Legal Sections */
+.legal-section {
+    grid-column: 2;
+    background: rgba(45, 27, 78, 0.3);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.1);
+    margin-bottom: 2rem;
+    scroll-margin-top: 100px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.legal-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-purple);
+}
+
+.legal-section h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    color: var(--text-primary);
+}
+
+.legal-section p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.legal-section ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    line-height: 1.8;
+}
+
+.legal-section li {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.legal-section a {
+    color: var(--primary-purple);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.legal-section a:hover {
+    color: var(--secondary-pink);
+}
+
+.legal-section strong {
+    color: var(--text-primary);
+}
+
+/* Important Notes and Disclaimers */
+.important-note {
+    background: rgba(168, 85, 247, 0.1);
+    border-left: 4px solid var(--primary-purple);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.important-disclaimer {
+    background: rgba(239, 68, 68, 0.1);
+    border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.disclaimer-emphasis {
+    color: #fca5a5;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Information */
+.contact-info {
+    background: rgba(30, 15, 50, 0.4);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Legal Footer */
+.legal-footer {
+    grid-column: 1 / -1;
+    background: rgba(45, 27, 78, 0.4);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.legal-footer p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Contact Page Styles */
+.contact-page {
+    padding: 8rem 0 4rem;
+    min-height: 100vh;
+}
+
+.contact-container {
+    max-width: 1200px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.contact-content {
+    margin-bottom: 4rem;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.contact-form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.required {
+    color: var(--secondary-pink);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.875rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    background: rgba(30, 15, 50, 0.6);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(236, 72, 153, 0.1);
+    border-radius: 6px;
+}
+
+/* Form Messages */
+.form-message {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.form-message.success {
+    background: rgba(34, 197, 94, 0.2);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #86efac;
+}
+
+.form-message.error {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-method {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    transition: all 0.3s;
+}
+
+.contact-method:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--primary-purple);
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details a {
+    color: var(--primary-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--secondary-pink);
+}
+
+.response-time {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Social Links */
+.social-links {
+    padding: 1.5rem;
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.social-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-purple);
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: linear-gradient(135deg, var(--primary-purple), var(--secondary-pink));
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.faq-item {
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-purple);
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.faq-item a {
+    color: var(--primary-purple);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.faq-item a:hover {
+    color: var(--secondary-pink);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .legal-content {
+        grid-template-columns: 1fr;
+    }
+
+    .table-of-contents {
+        position: static;
+        max-width: 300px;
+        margin: 0 auto 3rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .legal-page,
+    .contact-page {
+        padding: 6rem 0 3rem;
+    }
+
+    .legal-header h1,
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .legal-section {
+        padding: 1.5rem;
+    }
+
+    .contact-form-section {
+        padding: 1.5rem;
+    }
+
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-header h1,
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .legal-section h2,
+    .contact-form-section h2,
+    .contact-info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin: 0 auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .table-of-contents {
+        display: none;
+    }
+
+    .legal-page,
+    .contact-page {
+        background: white;
+        color: black;
+    }
+
+    .legal-content {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-section {
+        background: white;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+}

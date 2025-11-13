@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ELEVA - Women's Integrated Wellness Intelligence platform. AI-powered layer unifying all your health, wellness, and lifestyle apps into one intelligent dashboard.">
+    <meta name="keywords" content="women's health, wellness, AI, health tracking, integrated platform, preventative health">
+    <title>ELEVA - Proactive, Unified Wellness. Intelligently Yours.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="url(#gradient)" />
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="24" y2="24">
+                            <stop offset="0%" stop-color="#a855f7" />
+                            <stop offset="100%" stop-color="#ec4899" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">ELEVA</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#waitlist" class="btn btn-primary">Join Waitlist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Proactive, Unified<br>
+                    Wellness.<br>
+                    <span class="gradient-text">Intelligently Yours.</span>
+                </h1>
+                <p class="hero-description">
+                    Our AI-powered platform connects your existing health, wellness, and lifestyle apps into a single, intelligent view for personalized, predictive guidance.
+                </p>
+                <a href="#waitlist" class="btn btn-primary btn-large">Join the Waitlist</a>
+            </div>
+            <div class="hero-dashboard">
+                <div class="dashboard-card">
+                    <div class="dashboard-header">
+                        <span class="dashboard-badge">Good Evening</span>
+                        <h3>ELEVA</h3>
+                        <button class="insights-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2L10 6L14 7L10 9L8 14L6 9L2 7L6 6L8 2Z" fill="currentColor"/>
+                            </svg>
+                            Proactive Insight
+                        </button>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span>Sleep</span>
+                            </div>
+                            <div class="metric-value">7h 45m</div>
+                            <div class="sleep-graph">
+                                <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <path d="M0,20 Q25,5 50,15 T100,10" stroke="rgba(168, 85, 247, 0.5)" fill="none" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span>Activity</span>
+                            </div>
+                            <div class="progress-ring activity-ring">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="25" stroke="#2d1b4e" stroke-width="6" fill="none"/>
+                                    <circle cx="30" cy="30" r="25" stroke="#a855f7" stroke-width="6" fill="none"
+                                            stroke-dasharray="157" stroke-dashoffset="40" transform="rotate(-90 30 30)"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span>Mood</span>
+                            </div>
+                            <div class="progress-ring mood-ring">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="25" stroke="#2d1b4e" stroke-width="6" fill="none"/>
+                                    <circle cx="30" cy="30" r="25" stroke="#ec4899" stroke-width="6" fill="none"
+                                            stroke-dasharray="157" stroke-dashoffset="80" transform="rotate(-90 30 30)"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="metric-card heart-rate">
+                            <div class="metric-header">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 17L3 10C1 8 1 5 3 3C5 1 8 1 10 3C12 1 15 1 17 3C19 5 19 8 17 10L10 17Z" fill="#ec4899"/>
+                                </svg>
+                                <span>Heart Rate</span>
+                            </div>
+                            <div class="metric-value">62 <span class="metric-unit">bpm</span></div>
+                        </div>
+
+                        <div class="metric-card cycle-card">
+                            <div class="metric-header">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span>Cycle</span>
+                            </div>
+                            <div class="metric-value">Day 14 <span class="metric-phase">Ovulation</span></div>
+                        </div>
+                    </div>
+
+                    <div class="self-care-card">
+                        <div class="self-care-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" fill="#ec4899"/>
+                            </svg>
+                        </div>
+                        <div class="self-care-content">
+                            <h4>Self-Care Moment</h4>
+                            <p>From Calm</p>
+                        </div>
+                        <button class="self-care-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M8 5L13 10L8 15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>A single intelligent dashboard for your total well-being</h2>
+                <p>Our platform unifies your existing apps, anticipating issues before they arise and providing personalized guidance to help you thrive.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="12" height="12" rx="2" stroke="#a855f7" stroke-width="2"/>
+                            <rect x="28" y="8" width="12" height="12" rx="2" stroke="#a855f7" stroke-width="2"/>
+                            <rect x="8" y="28" width="12" height="12" rx="2" stroke="#a855f7" stroke-width="2"/>
+                            <rect x="28" y="28" width="12" height="12" rx="2" stroke="#a855f7" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>All Your Data, One View</h3>
+                    <p>Connect all your favorite apps — period apps, fitness trackers, mood journals, sleep data, wearables, and more — in one single, seamless dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6L28 16L38 18L30 26L32 38L24 33L16 38L18 26L10 18L20 16L24 6Z" stroke="#a855f7" stroke-width="2" fill="none"/>
+                            <circle cx="24" cy="24" r="4" fill="#a855f7"/>
+                        </svg>
+                    </div>
+                    <h3>Proactive Health Insights</h3>
+                    <p>Our AI analyzes your data and detects patterns to anticipate problems before symptoms arise, delivering personalized guidance for your health and wellness needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="16" r="8" stroke="#a855f7" stroke-width="2"/>
+                            <path d="M8 40C8 32 15 26 24 26C33 26 40 32 40 40" stroke="#a855f7" stroke-width="2"/>
+                            <circle cx="24" cy="16" r="3" fill="#a855f7"/>
+                        </svg>
+                    </div>
+                    <h3>Truly Personal Guidance</h3>
+                    <p>Receive actionable, personalized care tailored to your unique rhythms, lifestyle, and goals, by intelligently connecting insights specifically to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="#a855f7" stroke-width="2"/>
+                            <path d="M16 20L20 24L28 16" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>1. Connect Your Apps</h3>
+                    <p>Securely link your existing health, fitness, and lifestyle applications in minutes.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="16" stroke="#a855f7" stroke-width="2"/>
+                            <path d="M24 16V24L30 28" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>2. AI Analysis</h3>
+                    <p>Our intelligent engine unifies and analyzes your data to uncover meaningful patterns.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L28 18L38 20L30 28L32 40L24 35L16 40L18 28L10 20L20 18L24 8Z" stroke="#a855f7" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>3. Personalized Insights</h3>
+                    <p>Receive proactive guidance and recommendations tailored specifically to your well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container security-container">
+            <h2 class="section-title">Your Data is Yours. Always.</h2>
+            <p class="security-subtitle">We believe in privacy by design. Your personal information is encrypted, anonymized, and never shared without your explicit consent. You are always in control.</p>
+            <div class="security-features">
+                <div class="security-feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L4 6V11C4 16 7 20 12 22C17 20 20 16 20 11V6L12 2Z" stroke="#a855f7" stroke-width="2"/>
+                        <path d="M9 12L11 14L15 10" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>End-to-End Encryption</span>
+                </div>
+                <div class="security-feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="#a855f7" stroke-width="2"/>
+                        <path d="M12 8V12L15 15" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>User-Controlled Data</span>
+                </div>
+                <div class="security-feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect x="5" y="11" width="14" height="10" rx="2" stroke="#a855f7" stroke-width="2"/>
+                        <path d="M8 11V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V11" stroke="#a855f7" stroke-width="2"/>
+                    </svg>
+                    <span>Privacy by Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="waitlist">
+        <div class="container waitlist-container">
+            <h2>Take the First Step Towards a More Connected You</h2>
+            <p>Be the first to know when ELEVA launches. Join our waitlist for exclusive early access and updates.</p>
+            <form class="waitlist-form" id="waitlist-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key - Replace with your actual key from https://web3forms.com -->
+                <input type="hidden" name="access_key" value="d5df4229-65ff-4437-92a6-972dfee7348d">
+
+                <!-- Subject for easier email filtering -->
+                <input type="hidden" name="subject" value="ELEVA Waitlist Signup">
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" style="display: none;">
+
+                <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+
+                <!-- hCaptcha Spam Protection -->
+                <div class="h-captcha" data-captcha="true"></div>
+
+                <button type="submit" class="btn btn-primary">Join Waitlist</button>
+            </form>
+            <p class="form-success" id="form-success">Thank you! You're on the waitlist. 🎉</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>When will ELEVA launch?</h3>
+                    <p>ELEVA is currently in development. Join our waitlist to be among the first to know when we launch and receive exclusive early access.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is ELEVA free to use?</h3>
+                    <p>Pricing details will be announced closer to launch. Waitlist members will receive special early access pricing information.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Which apps does ELEVA integrate with?</h3>
+                    <p>ELEVA will integrate with major health and wellness apps including fitness trackers, cycle apps, sleep monitors, and more. The full integration list will be available at launch.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my health data secure?</h3>
+                    <p>Absolutely. We use end-to-end encryption, HIPAA-compliant storage, and privacy-by-design principles. Learn more on our <a href="privacy.html">Privacy Policy</a> page.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I delete my data?</h3>
+                    <p>Yes! You have complete control over your data. You can export or delete your data at any time from your account settings.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer partnership opportunities?</h3>
+                    <p>Yes! We're interested in partnerships with healthcare providers, wellness brands, and technology companies. Contact us at <a href="mailto:help.eleva@gmail.com">help.eleva@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">© 2024 ELEVA. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="mailto:help.eleva@gmail.com">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

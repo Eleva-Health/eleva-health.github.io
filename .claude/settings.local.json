@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sequential-thinking__sequentialthinking",
+      "WebSearch",
+      "WebFetch(domain:docs.web3forms.com)",
+      "WebFetch(domain:dev.to)",
+      "Skill(superpowers:using-superpowers)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
