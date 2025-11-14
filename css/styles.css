@@ -107,7 +107,7 @@ body {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
@@ -492,13 +492,23 @@ body {
 
 .waitlist-form {
     display: flex;
-    gap: 1rem;
-    max-width: 500px;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
     margin: 0 auto;
+    align-items: center;
 }
 
-.waitlist-form input {
+.waitlist-form-row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+.waitlist-form input[type="email"] {
     flex: 1;
+    min-width: 0;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     border: 1px solid rgba(168, 85, 247, 0.3);
@@ -509,13 +519,25 @@ body {
     transition: all 0.3s;
 }
 
-.waitlist-form input::placeholder {
+.waitlist-form input[type="email"]::placeholder {
     color: var(--text-muted);
 }
 
-.waitlist-form input:focus {
+.waitlist-form input[type="email"]:focus {
     border-color: var(--primary-purple);
     box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+}
+
+/* hCaptcha Container Styling */
+.waitlist-form .h-captcha {
+    align-self: center;
+}
+
+/* Button Styling */
+.waitlist-form .btn {
+    flex: 0 0 auto;
+    min-width: 180px;
+    white-space: nowrap;
 }
 
 .form-success {
@@ -584,6 +606,11 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    /* Adjust waitlist form for tablet screens */
+    .waitlist-form {
+        max-width: 550px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -627,7 +654,22 @@ body {
     }
 
     .waitlist-form {
+        max-width: 100%;
+    }
+
+    .waitlist-form-row {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .waitlist-form input[type="email"],
+    .waitlist-form .btn {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .waitlist-form .h-captcha {
+        align-self: center;
     }
 
     .footer-container {
