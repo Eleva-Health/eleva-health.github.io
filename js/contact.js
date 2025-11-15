@@ -22,7 +22,6 @@
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
     const messageError = document.getElementById('messageError');
-    const captchaError = document.getElementById('captchaError');
 
     /**
      * Validate email format
@@ -39,7 +38,6 @@
         nameError.textContent = '';
         emailError.textContent = '';
         messageError.textContent = '';
-        captchaError.textContent = '';
         formMessage.style.display = 'none';
     }
 
@@ -104,13 +102,6 @@
             isValid = false;
         }
 
-        // Check hCaptcha
-        const captchaResponse = form.querySelector('[name="h-captcha-response"]');
-        if (!captchaResponse || !captchaResponse.value) {
-            captchaError.textContent = 'Please complete the captcha verification';
-            isValid = false;
-        }
-
         return isValid;
     }
 
@@ -119,12 +110,6 @@
      */
     function resetForm() {
         form.reset();
-
-        // Reset hCaptcha
-        if (typeof hcaptcha !== 'undefined') {
-            hcaptcha.reset();
-        }
-
         clearErrors();
     }
 

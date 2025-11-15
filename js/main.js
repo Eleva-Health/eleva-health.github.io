@@ -52,13 +52,6 @@ if (waitlistForm) {
             return;
         }
 
-        // hCaptcha validation
-        const hCaptchaResponse = waitlistForm.querySelector('textarea[name=h-captcha-response]');
-        if (!hCaptchaResponse || !hCaptchaResponse.value) {
-            showNotification('Please complete the CAPTCHA verification.', 'error');
-            return;
-        }
-
         // Disable button and show loading state
         submitButton.disabled = true;
         const originalText = submitButton.textContent;
@@ -81,6 +74,12 @@ if (waitlistForm) {
                 })
             });
 
+            // Check for rate limiting
+            if (response.status === 429) {
+                showNotification('Too many requests. Please wait a minute and try again.', 'error');
+                return;
+            }
+
             const result = await response.json();
 
             if (result.success) {
@@ -101,7 +100,13 @@ if (waitlistForm) {
             }
         } catch (error) {
             console.error('Error submitting to waitlist:', error);
-            showNotification('Something went wrong. Please try again.', 'error');
+
+            // Specific error handling
+            if (error.message && error.message.includes('429')) {
+                showNotification('Too many requests. Please wait a minute and try again.', 'error');
+            } else {
+                showNotification('Something went wrong. Please try again.', 'error');
+            }
         } finally {
             // Re-enable button
             submitButton.disabled = false;
