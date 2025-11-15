@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact ELEVA - Get in touch with our team for support, partnerships, or general inquiries.">
+    <title>Contact Us - ELEVA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="url(#gradient)" />
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="24" y2="24">
+                                <stop offset="0%" stop-color="#a855f7" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">ELEVA</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How it Works</a></li>
+                <li><a href="index.html#security">Security</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#waitlist" class="btn btn-primary">Join Waitlist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <h1>Contact Us</h1>
+                <p class="lead">Have questions, feedback, or partnership inquiries? We'd love to hear from you.</p>
+            </div>
+
+            <div class="policy-content" style="max-width: 700px; margin: 0 auto;">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <!-- Web3Forms Access Key (hidden) -->
+                        <input type="hidden" name="access_key" value="71fa09bd-1cf5-48bb-b25c-663c1b4a46be">
+
+                        <!-- Subject Line (hidden, for email routing) -->
+                        <input type="hidden" name="subject" value="ELEVA Contact Form Submission">
+
+                        <!-- Custom from name (hidden) -->
+                        <input type="hidden" name="from_name" value="ELEVA Contact Form">
+
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your full name"
+                                required
+                                minlength="2"
+                                maxlength="100">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your@email.com"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell us how we can help you..."
+                                required
+                                minlength="10"
+                                maxlength="1000"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                            <small class="form-hint">Minimum 10 characters, maximum 1000 characters</small>
+                        </div>
+
+                        <!-- hCaptcha -->
+                        <div class="form-group">
+                            <div class="h-captcha"
+                                 data-captcha="true"
+                                 data-theme="dark"
+                                 data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2">
+                            </div>
+                            <span class="error-message" id="captchaError"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <span id="btnText">Send Message</span>
+                            <span id="btnLoader" class="btn-loader" style="display: none;">
+                                <svg class="spinner" viewBox="0 0 24 24">
+                                    <circle class="spinner-circle" cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <!-- Success/Error Messages -->
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+
+                <!-- Additional Contact Info (Optional) -->
+                <div class="contact-info" style="margin-top: 3rem; padding-top: 3rem; border-top: 1px solid rgba(168, 85, 247, 0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">Other Ways to Connect</h3>
+                    <div style="display: grid; gap: 1.5rem;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 0.5rem;">Partnership Inquiries</h4>
+                            <p style="color: var(--text-secondary); line-height: 1.6;">
+                                Interested in partnering with ELEVA? We're always looking for innovative collaborations
+                                in the women's health and wellness space.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 0.5rem;">Support</h4>
+                            <p style="color: var(--text-secondary); line-height: 1.6;">
+                                For platform support or technical questions, use the form above and we'll get back to you
+                                as soon as possible.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 0.5rem;">Join Our Community</h4>
+                            <p style="color: var(--text-secondary); line-height: 1.6;">
+                                <a href="index.html#waitlist" style="color: var(--accent); text-decoration: underline;">Join our waitlist</a>
+                                to be among the first to experience ELEVA and receive exclusive updates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">© 2024 ELEVA. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
