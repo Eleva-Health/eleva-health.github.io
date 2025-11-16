@@ -525,6 +525,13 @@ button:disabled {
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid rgba(168, 85, 247, 0.2);
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.2);
 }
 
 .faq-item h3 {

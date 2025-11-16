@@ -428,6 +428,18 @@ body {
 
 .step-card {
     text-align: center;
+    background: rgba(45, 27, 78, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    transition: all 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.2);
 }
 
 .step-icon {
